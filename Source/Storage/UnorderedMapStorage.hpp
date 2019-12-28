@@ -1,20 +1,22 @@
 #pragma once
 
+#include <unordered_map>
+
 #include "../ECS.hpp"
 #include "Storage.hpp"
 
 namespace HxECS { namespace Storage
 {
+
     template <typename T>
-    class VectorStorage: AbstractStorage<T>
+    class UnorderedMapStorage: AbstractStorage<T>
     {
         private:
-            std::vector<T*> data;
+            std::unordered_map<HxECS::Index, T> data;
         public:
-            VectorStorage();
-            ~VectorStorage();
-            T* get(HxECS::Index);
-            void remove(HxECS::Index);
             void insert(HxECS::Index, T);
+            T get(HxECS::Index);
+            void remove(HxECS::Index);
     };
+
 } }

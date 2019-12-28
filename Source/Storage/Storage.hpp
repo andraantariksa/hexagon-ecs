@@ -10,7 +10,7 @@ namespace HxECS { namespace Storage {
         public:
             virtual void insert(HxECS::Index, T) = 0;
             virtual void remove(HxECS::Index) = 0;
-            virtual void get(HxECS::Index) = 0;
+            virtual T get(HxECS::Index) = 0;
     };
 
 }}

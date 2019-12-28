@@ -15,7 +15,7 @@ namespace HxECS { namespace Storage
     template <typename T>
     T UnorderedMapStorage<T>::get(HxECS::Index index)
     {
-        return this->data.get(index);
+        return this->data[index];
     }
 
     template <typename T>

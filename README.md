@@ -16,6 +16,6 @@ Run the command below
 make
 ```
 
-## LICENSE
+## License
 
 [MIT Licensed](LICENSE)

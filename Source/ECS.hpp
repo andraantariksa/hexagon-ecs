@@ -15,9 +15,3 @@ namespace HxECS
             ~ECS();
     };
 }
-
-#include "Storage/Storage.hpp"
-#include "Entity.hpp"
-#include "Component.hpp"
-#include "System.h"
-#include "World.h"

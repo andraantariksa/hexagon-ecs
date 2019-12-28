@@ -6,7 +6,7 @@ namespace HxECS
     class System
     {
         protected:
-            void run();
+            virtual void run() = 0;
     };
 
 }
